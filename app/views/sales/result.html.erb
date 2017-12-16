@@ -1,0 +1,6 @@
+<h2>This Sale Report shows a total sales amount of <%= number_to_currency(@total_imported_value,
+                                                                          unit: "R$ ",
+                                                                          separator: ",",
+                                                                          delimiter: "." ) %>!</h2>
+
+<%= link_to "Home", new_sale_path %>
