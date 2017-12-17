@@ -1,3 +1,46 @@
+## SalesReportReader
+It will read your sales report returning your sales amount!
+Just upload a file having the following template:
+| Header | Type |
+| ------ | ------ |
+| purchaser name | string |
+| item description | string |
+| item price | float |
+| purchase count | integer |
+| merchant address | string |
+| merchant name | string |
+
+All data must be delimited with a tabs (/t) and header is mandatory!
+
+The project works as simple as possible, so it's crucial to follow the template above.
+
+## Running it!
+### Docker Compose
+This project is configured with a docker container, so if you have docker-compose installed, just docker-compose up and be happy!
+```
+$ docker-compose up
+```
+Make sure that your 3000 port is available.
+
+### No Docker? No problem!
+Assuming that you already have Ruby and Bundler installed, go to the project root path an run:
+```
+$ bundle install
+$ rails s
+```
+Also, make sure that your 3000 port is available.
+
+## ToDo List
+  - Use OAuth to make file uploads only available for authenticated users;
+  - Exceptions for corner cases (invalid encoding, invalid file, etc.)
+  - Deploy to heroku
+
+## Why did I did it?
+It's a programming challenge!
+Wanna try?
+
+Follow the rules below...
+
 # Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
@@ -33,7 +76,7 @@ Sua aplicação web não precisa:
 1. Ter uma aparência bonita.
 
 ## Avaliação
-Seu projeto será avaliado de acordo com os seguintes critérios. 
+Seu projeto será avaliado de acordo com os seguintes critérios.
 
 1. Sua aplicação preenche os requerimentos básicos?
 1. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
