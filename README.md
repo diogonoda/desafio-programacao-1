@@ -18,6 +18,7 @@ The project works as simple as possible, so it's crucial to follow the template 
 ### Docker Compose
 This project is configured with a docker container, so if you have docker-compose installed, just docker-compose up and be happy!
 ```
+$ docker-compose build
 $ docker-compose up
 ```
 Make sure that your 3000 port is available.
